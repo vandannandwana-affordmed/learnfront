@@ -1,0 +1,70 @@
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#user_name{
+    color: white;
+    padding: 0%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#user_location{
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    font-size: 12px;
+    color: #ced6b6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#user_designation{
+    padding: 0%;
+    margin: 2%;
+    font-size: 16px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile_image{
+    width: 50%;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+#content_box{
+    width: 90%;
+    max-width: 300px;
+    background-color:rgb(44, 43, 43);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.platform_link{
+    margin: 7px;
+    background-color: black;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.platform_link:hover{
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 252, 252);
+}
