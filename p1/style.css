@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(171, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+#content_box {
+    width: 90%;
+    max-width: 300px;
+    background-color: rgb(255, 255, 171);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#qr_code_box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+#qr_code_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid black;
+    border-radius: 12px;
+}
+
+#qr_code_text {
+    text-align: center;
+    margin-top: 12px;
+}
