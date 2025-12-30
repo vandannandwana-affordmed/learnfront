@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpapershome.com/images/pages/ico_h/28312.jpg");
+    background-size: cover;
+}
+
+#content_box {
+    width: 90%;
+    height: 100%;
+    max-width: 920px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.card_name {
+    margin: 10% 0% 10% 0%;
+}
+
+.card_section {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    color: white;
+}
+
+#sedan_section {
+    background-color: #E38525;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+#suv_section {
+    background-color: #016871;
+}
+#luxury_section {
+    background-color: #003F3E;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#learn_more_button {
+    width: 70%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    margin: 20% 0% 5% 0%;
+    border-radius: 24px;
+    font-weight: bold;
+}
