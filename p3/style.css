@@ -1,0 +1,94 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpapershome.com/images/pages/ico_h/28312.jpg");
+    background-size: cover;
+}
+
+#profile_image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    z-index: 1;
+}
+
+#image_name_section {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px 12px 0 0;
+}
+
+
+#name_follower_count{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user_name{
+    padding: 0px 10px 0px 0px;
+    font-size: 100%;
+}
+
+#follower_count{
+    font-size: 70%;
+}
+
+#posts_description_section{
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid rgb(60, 60, 60);
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.posts_description{
+    height: 100%;
+    width: 30%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.posts_info{
+    font-weight: bold;
+    margin: 10% 0% 0% 0%;
+}
+
+.posts_heading{
+    font-weight: 100;
+    margin: 2%;
+    color: rgb(83, 83, 83);
+}
+
+#content_box {
+    width: 90%;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#top_design {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-image: url("https://i.pinimg.com/736x/d6/20/33/d62033ee49601c7b4b7d886b3d09dfe9.jpg");
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+}
