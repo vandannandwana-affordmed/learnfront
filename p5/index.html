@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="content_box">
-        <div id="sedan_section" class="card_section">
-            <img src="https://cdn-icons-png.flaticon.com/512/2736/2736918.png" width="50px" alt="Sedan Ico">
-            <h1 class="card_name">SEDANS</h1>
-            <p class="card_description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nesciunt. Suscipit quo, provident aut laborum dolore sequi eum aliquid incidunt placeat, labore nemo atque ab?
-            </p>
-            <div id="learn_more_button">
-                Learn More
-            </div>
-        </div>
-        
-        <div id="suv_section" class="card_section">
-            <img src="https://cdn-icons-png.flaticon.com/512/2736/2736781.png" width="50px" alt="Sedan Ico">
-            <h1 class="card_name">SUVS</h1>
-            <p class="card_description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nesciunt. Suscipit quo, provident aut laborum dolore sequi eum aliquid incidunt placeat, labore nemo atque ab?
-            </p>
-            <div id="learn_more_button">
-                Learn More
-            </div>
-        </div>
 
-        <div id="luxury_section" class="card_section">
-            <img src="https://cdn-icons-png.flaticon.com/512/640/640173.png" width="50px" alt="Sedan Ico">
-            <h1 class="card_name">LUXURY</h1>
-            <p class="card_description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, nesciunt. Suscipit quo, provident aut laborum dolore sequi eum aliquid incidunt placeat, labore nemo atque ab?
-            </p>
-            <div id="learn_more_button">
-                Learn More
-            </div>
-        </div>
-    </div>    
+<body>
+    <main id="main_content_body">
+        <ul id="card_list">
+            <li id="sedan_section" class="card_section">
+                <img src="./assets/icon-sedans.svg" width="50px" alt="Sedan Ico">
+                <p class="card_name">SEDANS</p>
+                <p class="card_description">
+                    Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+                    or on your next road trip.
+                </p>
+                <p id="learn_more_sedan" class="learn_more_button">
+                    Learn More
+                </p>
+            </li>
+
+            <li id="suv_section" class="card_section">
+                <img src="./assets/icon-suvs.svg" width="50px" alt="Sedan Ico">
+                <p class="card_name">SUVS</p>
+                <p class="card_description">
+                    Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+                    and off-road adventures.
+                </p>
+                <p id="learn_more_suv" class="learn_more_button">
+                    Learn More
+                </p>
+            </li>
+
+            <li id="luxury_section" class="card_section">
+                <img src="./assets/icon-luxury.svg" width="50px" alt="Sedan Ico">
+                <p class="card_name">LUXURY</p>
+                <p class="card_description">
+                    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+                    rental and arrive in style.
+                </p>
+                <p id="learn_more_luxury" class="learn_more_button">
+                    Learn More
+                </p>
+            </li>
+        </ul>
+    </main>
 </body>
+
 </html>

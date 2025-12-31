@@ -1,49 +1,87 @@
+@font-face {
+    font-family: lexend;
+    src: url("./assets/LexendDeca-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: big-shoulders;
+    src: url("./assets/BigShoulders_24pt-Regular.ttf");
+    font: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: big-shoulders;
+}
+
+li {
+    list-style-type: none;
+}
+
 body {
     min-height: 100vh;
-    margin: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://wallpapershome.com/images/pages/ico_h/28312.jpg");
+    background-color: hsl(0, 0%, 95%);
     background-size: cover;
 }
 
-#content_box {
-    width: 90%;
-    height: 100%;
+#main_content_body {
     max-width: 920px;
-    background-color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: white;
     border-radius: 24px;
+    
+}
+
+#card_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card_name {
-    margin: 10% 0% 10% 0%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 42px;
+    color: hsl(0, 0%, 95%);
+}
+
+.card_description {
+    font-size: 15px;
+    font-family: lexend;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    line-height: 26px;
 }
 
 .card_section {
     width: 100%;
     height: 100%;
-    padding: 5%;
+    padding: 48px;
     color: white;
 }
 
 #sedan_section {
-    background-color: #E38525;
+    background-color: hsl(31, 77%, 52%);
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
 }
 #suv_section {
-    background-color: #016871;
+    background-color: hsl(184, 100%, 22%);
 }
 #luxury_section {
-    background-color: #003F3E;
+    background-color: hsl(179, 100%, 13%);
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
 }
 
-#learn_more_button {
+.learn_more_button {
     width: 70%;
     background-color: white;
     color: black;
@@ -51,8 +89,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5% 0% 5% 0%;
-    margin: 20% 0% 5% 0%;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 24px;
-    font-weight: bold;
+    font-family: lexend;
+}
+
+#learn_more_sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+#learn_more_suv {
+    color: hsl(184, 100%, 22%);
+}
+
+#learn_more_luxury {
+    color: hsl(179, 100%, 13%);
 }

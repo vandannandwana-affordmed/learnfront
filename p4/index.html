@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brain test</title>
+    <title>Result Summary</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="content_box">
-        <div id="score_section">
-            <p>Your Result</p>
-            <div id="result_value">
-                <p id="result">76</p>
-                <p id="result_text">of 100</p>
-            </div>
-            <p id="result_great">Great</p>
-            <p id="result_description">The aquired score is more than 60% of people who had taken the test.</p>
-        </div>
 
-        <div id="summary_section">
-            <h1 id="summary_heading">Summary</h1>
-            <div class="summary_item">
-                <!-- icon -->
-                <div class="summary_item_name">Reaction</div>
-                <div class="summary_item_score">80 / 100</div>
-            </div>
-            <div class="summary_item">
-                <!-- icon -->
-                <div class="summary_item_name">Memory</div>
-                <div class="summary_item_score">92 / 100</div>
-            </div>
-            <div class="summary_item">
-                <!-- icon -->
-                <div class="summary_item_name">Verbal</div>
-                <div class="summary_item_score">61 / 100</div>
-            </div>
-            <div class="summary_item">
-                <!-- icon -->
-                <div class="summary_item_name">Visual</div>
-                <div class="summary_item_score">73 / 100</div>
-            </div>
-            <div id="continue_button">
-                Continue
-            </div>
-        </div>
-    </div>
+<body>
+    <main>
+        <article id="summary_section">
+            <!-- overview section -->
+            <section id="summary_overview_section">
+                <p>Your Result</p>
+
+                <div id="percentage_circle">
+                    <p id="percentage_value">76</p>
+                    <p id="outof_value">of 100</p>
+                </div>
+
+                <p id="summary_text1">Great</p>
+                <p id="summary_text2">You scored heigher than 65% of the people who have taken these tests.</p>
+            </section>
+
+            <!-- detailed section -->
+            <section id="summary_detail_section">
+                <p>Summary</p>
+                <ul id="summary_items">
+                    <li id="reaction_item" class="summary_item">
+                        <img class="reaction_icon" src="./assets/icon-reaction.svg" alt="reaction icn">
+                        <p>Reaction</p>
+                        <div class="summary_item_value">
+                            <p class="summary_item_percentage">80</p>
+                            <p>/ 100</p>
+                        </div>
+                    </li>
+                    <li id="memory_item" class="summary_item">
+                        <img class="reaction_icon" src="./assets/icon-memory.svg" alt="reaction icn">
+                        <p>Memory</p>
+                        <div class="summary_item_value">
+                            <p class="summary_item_percentage">92</p>
+                            <p>/ 100</p>
+                        </div>
+                    </li>
+                    <li id="verbal_item" class="summary_item">
+                        <img class="reaction_icon" src="./assets/icon-verbal.svg" alt="reaction icn">
+                        <p>Verbal</p>
+                        <div class="summary_item_value">
+                            <p class="summary_item_percentage">61</p>
+                            <p>/ 100</p>
+                        </div>
+                    </li>
+                    <li id="visual_item" class="summary_item">
+                        <img class="reaction_icon" src="./assets/icon-visual.svg" alt="reaction icn">
+                        <p>Visual</p>
+                        <div class="summary_item_value">
+                            <p class="summary_item_percentage">73</p>
+                            <p>/ 100</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <p id="continue_button">
+                    Continue
+                </p>
+            </section>
+        </article>
+    </main>
 </body>
+
 </html>

@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="content_box">
-        <!-- Image -->
-        <img id="profile_image" src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg=" alt="Profile Image">
-        <!-- name -->
-        <h1 id="user_name">Vandan Nandwana</h1>
-        <!-- location -->
-        <h3 id="user_location">Udaipur, Rajasthan, India</h3>
-        <!-- description -->
-        <h2 id="user_designation">"Full Stack Developer"</h2>
-        <!-- github link -->
-        <div class="platform_link">
-            <a href="https://www.github.com/"><p class="link_text">GitHub</p></a>
-        </div>
-        <!-- linkdin link -->
-        <div class="platform_link">
-            <a href="https://www.linkedin.com/"><p class="link_text">linkedIn</p></a>
-        </div>
-        <!-- twitter link -->
-        <div class="platform_link">
-            <a href="https://www.x.com/"><p class="link_text">X</p></a>
-        </div>
-        <!-- instagram link -->
-        <div class="platform_link">
-            <a href="https://www.instagram.com/"><p class="link_text">Instagram</p></a>
-        </div>
-    </div>
-    
+  <main>
+    <article class="container">
+      <figure>
+        <img id="user_profile" src="./assets/avatar-jessica.jpeg" alt="">
+      </figure>
+
+      <header>
+        <p id="user_name">Jessica Randall</p>
+        <p id="user_address">London, United Kingdom</p>
+        <p id="user_designation">"Front-end developer and avid reader."</p>
+      </header>
+
+      <ul aria-label="Social Profiles" id="social_profiles">
+        <li><a href="https://www.github.com">GitHub</a></li>
+        <li><a href="https://www.frontendmentor.com">Frontend Mentor</a></li>
+        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        <li><a href="https://www.twitter.com">Twitter</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+      </ul>
+
+    </article>
+  </main>
 </body>
+
 </html>
