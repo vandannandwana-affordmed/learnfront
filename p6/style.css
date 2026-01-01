@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Karla;
+    src: url("./assets/Karla-Regular.ttf");
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+#main_content_body {
+    width: 800px;
+    display: grid;
+    border-radius: 7px;
+    grid-template-rows: auto 1fr;
+    background-color: white;
+}
+
+#summary_section {
+    padding: 42px;
+}
+
+#main_heading {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 24px;
+}
+#description1 {
+    color: hsl(71, 73%, 54%);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+#description2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(218, 22%, 67%);
+}
+
+#extras_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(179, 62%, 43%);
+    border-end-end-radius: 7px;
+    border-end-start-radius: 7px;
+}
+
+#payment_section {
+    padding: 42px;
+    display: grid;
+    row-gap: 12px;
+}
+
+#subscription_text {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#subscription_price_info {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+#subscription_tenure {
+    color: hsl(179, 57%, 69%);
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+#subscription_description {
+    color: hsla(0, 100%, 100%, 70%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#signup_button {
+    color: white;
+    font-size: 18px;
+    font-weight: 400px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 18px;
+}
+
+#why_us_section {
+    padding: 42px;
+    background-color: #49BEBD;
+    border-end-end-radius: 7px;
+    display: grid;
+    row-gap: 24px;
+}
+
+#why_us_text {
+    color: white;
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+#why_us_description {
+    color: hsla(0, 100%, 100%, 70%);
+    padding-right: 80px;
+    font-size: 18px;
+    line-height: 24px;
+}

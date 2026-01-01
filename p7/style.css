@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Spartan;
+    src: url("./assets/LeagueSpartan-Regular.ttf");
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Spartan;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 1080px;
+    display: grid;
+    row-gap: 42px;
+}
+
+#info_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info_text_section {
+    display: grid;
+    row-gap: 28px;
+}
+
+#info_text {
+    font-size: 52px;
+    font-weight: 900;
+    color: hsl(300, 43%, 22%);
+    padding-right: 120px;
+}
+
+#info_description {
+    font-size: 18px;
+    padding-right: 85px;
+    line-height: 24px;
+    font-weight: 400;
+    color: hsla(300, 43%, 22%, 70%);
+}
+
+#rating_list {
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating_item {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F8F2F9;
+    margin: 12px;
+    padding: 18px;
+    padding-left: 28px;
+    padding-right: 62px;
+    border-radius: 7px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.rating_text {
+    margin-left: 28px;
+}
+
+#review_rating {
+    align-self: flex-start;
+}
+
+#guru_rating {
+    align-self: center;
+}
+
+#besttech_rating {
+    align-self: flex-end;
+}
+
+#comments_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 42px;
+}
+
+.comment_item {
+    display: grid;
+    grid-template-rows: 1f 1fr;
+    row-gap: 32px;
+    color: white;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    width: fit-content;
+    padding: 24px;
+}
+
+#image_name_section {
+    display: flex;
+    align-items: center;
+}
+
+.user_name_and_status {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user_status {
+    color: #ab679b;
+}
+
+#image_name_section img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.user_comment_text {
+    padding: 8px;
+    font-size: 14px;
+    line-height: 18px;
+}
