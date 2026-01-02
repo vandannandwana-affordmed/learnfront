@@ -7,7 +7,7 @@
 @font-face {
     font-family: big-shoulders;
     src: url("./assets/BigShoulders_24pt-Regular.ttf");
-    font: 700;
+    font-weight: 700;
 }
 
 * {
