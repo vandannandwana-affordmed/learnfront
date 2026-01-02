@@ -21,3 +21,12 @@
 
 # Challenge Eight
 <img width="1807" height="833" alt="p8" src="https://github.com/user-attachments/assets/3725bcc1-5ace-471a-bc69-4c5fa2f29f8d" />
+
+# Challenge Nine
+<img width="873" height="372" alt="image" src="https://github.com/user-attachments/assets/4699cec2-a6be-4e41-b3e5-8f9cab0a0ecf" />
+
+# Challenge Ten
+<img width="620" height="624" alt="Screenshot 2026-01-02 144229" src="https://github.com/user-attachments/assets/903ec123-6d26-4cf0-b567-9dc4fef1e1dc" />
+<img width="572" height="606" alt="Screenshot 2026-01-02 144239" src="https://github.com/user-attachments/assets/0b8a02dd-f0d9-40df-9654-9fd5444bad0f" />
+
+
