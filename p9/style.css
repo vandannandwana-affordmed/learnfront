@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Raleway;
+    src: url("./assets/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: #0B122B;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 720px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: end;
+    column-gap: 24px;
+}
+
+#file_upload {
+    background-color: #1D2C69;
+    padding: 42px;
+    border-radius: 10px;
+    border-top-right-radius: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 120px;
+}
+
+#upload_options {
+    display: flex;
+    gap: 12px;
+}
+
+#upload_options img {
+    background-color: bisque;
+    padding: 8px;
+    object-fit: fit;
+    border-radius: 7px;
+    background-color: hsl(229, 57%, 11%);
+    object-fit: fill;
+}
+
+#upload_progress {
+    position: relative;
+    width: 480px;
+    background-color: yellow;
+    padding: 32px;
+    border-radius: 7px;
+    color: white;
+    background-color: #1C2B68;
+}
+
+
+#leftover_storage {
+    font-weight: 700;
+}
+
+#progress_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#progress_bar {
+    width: 100%;
+    height: 18px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    background-color: #141E4B;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+}
+
+#progress_fill {
+    background-color: hsl(6, 100%, 80%);
+    height: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 24px;
+}
+
+#progress_dot {
+    width: 10px;
+    height: 10px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 2px;
+}
+
+#storage_left {
+  position: absolute;
+  top: -35px;
+  right: 32px;
+
+  background: white;
+  color: black;
+
+  padding: 12px 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-weight: 700;
+}
+
+#storage_left span {
+  color: gray;
+}
+
+#storage_left::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  right: 0px;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 22px solid white;
+}
+
+#storage_left_number {
+  font-size: 24px;
+  font-weight: 900;
+  color: black;
+}
+
+#storage_left_text {
+  font-size: 8px;
+  color: gray;
+}
+
+
