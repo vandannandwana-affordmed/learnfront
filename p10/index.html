@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form id="contact_form">
+      <h1>Contact Us</h1>
+      <div id="name_section">
+        <div id="first_name" class="input_field">
+          <label for="first_name">First Name *</label>
+          <input type="text" id="first_name" class="text_input" required>
+        </div>
+
+        <div id="last_name" class="input_field">
+          <label for="last_name">Last Name *</label>
+          <input type="text" id="last_name" class="text_input" required>
+        </div>
+      </div>
+
+      <div id="email" class="input_field">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" class="text_input" required>
+      </div>
+
+      <div id="enquery_section" class="input_field">
+        <label for="enquery_type">Query Type *</label>
+        <div class="radio_buttons">
+          <div class="radio_button">
+            <input type="radio" name="enquery_type" id="general_enquery" required> <p>General Enquiry</p>
+          </div>
+          <div class="radio_button" >
+            <input type="radio" name="enquery_type" id="support_enquery" required> <p>Support Enquiry</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="message_section" class="input_field">
+        <label for="message">Message *</label>
+        <textarea id="message" required class="text_input"></textarea>
+      </div>
+
+      <div id="concent_text">
+        <input type="checkbox" id="consent" required>
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+
+      <button id="submit_button" type="submit">Submit</button>
+  </main>
+
+</html>
