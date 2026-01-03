@@ -108,7 +108,7 @@ main {
     padding: 24px;
 }
 
-#image_name_section {
+.image_name_section {
     display: flex;
     align-items: center;
 }

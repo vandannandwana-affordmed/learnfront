@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Karla;
+    src: url("./assets/Karla-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(222, 232, 236);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(187, 194, 197);
+    margin: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 12px;
+}
+
+#theme_selector_box {
+    display: flex;
+    gap: 24px;
+}
+
+#theme_selector_box li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 194, 197);
+    padding: 8px;
+    border-radius: 7px;
+    gap: 8px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#theme_selector_box li:hover{
+    background-color:rgb(162, 172, 176);
+}
+
+#theme_selector_box img {
+    height: 36px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
