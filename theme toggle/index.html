@@ -8,23 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="sections">
+
     <header>
-        <ul id="theme_selector_box">
-            <li id="dark_button">
-                <img src="./assets/dark.png" alt=""> DARK
-            </li>
-            <li id="light_button">
-                <img src="./assets/light.png" alt=""> LIGHT
-            </li>
-            <li id="system_button">
-                <img src="./assets/system.png" alt=""> SYSTEM
-            </li>
-        </ul>
+        <nav class="navbar sections">
+            <div class="logo texts">Theme Toggler</div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="texts">Home</a></li>
+                <li><a href="#" class="texts">About</a></li>
+                <li><a href="#" class="texts">Projects</a></li>
+                <li><a href="#" class="texts">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h1 id="main_text">Theme Toogler</h1>
+
+    <aside>
+    <ul id="theme_selector_box">
+        <li id="dark_button">
+            <img src="./assets/dark.png" class="texts" alt=""> DARK
+        </li>
+        <li id="light_button">
+            <img src="./assets/light.png" class="texts" alt=""> LIGHT
+        </li>
+        <li id="system_button">
+            <img src="./assets/system.png" class="texts" alt=""> SYSTEM
+        </li>
+    </ul>
+    </aside>
+
+    <main class="sections">
+        <h1 id="main_text" class="texts">This the testing page to test the theme change</h1>
     </main>
+
+    <footer class="footer sections">
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2 class="texts">MySite</h2>
+                <p class="texts">Building simple, clean web experiences.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="texts">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="texts">Home</a></li>
+                    <li><a href="#" class="texts">About</a></li>
+                    <li><a href="#" class="texts">Projects</a></li>
+                    <li><a href="#" class="texts">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="texts">Follow</h3>
+                <ul>
+                    <li><a href="#" class="texts">GitHub</a></li>
+                    <li><a href="#" class="texts">LinkedIn</a></li>
+                    <li><a href="#" class="texts">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="texts">© 2026 MySite. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 <script src="script.js"></script>
 

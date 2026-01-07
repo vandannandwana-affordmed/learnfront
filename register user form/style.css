@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Karla;
+    src: url("./assets/Karla-Regular.ttf");
+    font-weight: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+body {
+    background-color: #E2F1E7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact_form {
+    display: grid;
+    width: 520px;
+    row-gap: 12px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+#contact_form h1 {
+    font-size: 22px;
+}
+
+#heading_and_reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reset_button {
+    color: rgb(228, 1, 1);
+    cursor: pointer;
+}
+
+#name_section {
+    display: flex;
+    gap: 12px;
+}
+
+.input_field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text_input {
+    max-width: 480px;
+    max-height: 480px;
+    padding: 8px;
+    height: 38px;
+    border-radius: 7px;
+}
+
+.radio_button {
+    border: 2px solid hsla(232, 8%, 65%, 0.644);
+    padding: 8px;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.radio_buttons {
+    display: flex;
+    gap: 12px;
+}
+
+#age_section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#age_section input{
+    font-size: 18px;
+}
+
+#concent_section {
+    margin-bottom: 24px;
+}
+
+#concent_text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+#submit_button {
+    background-color: #0B7D69;
+    padding:12px;
+    border-radius: 7px;
+    color: white;
+}
+
+.required_field_text {
+    color: rgb(228, 1, 1);
+    display: none;
+}
+
+#server_response {
+    display: none;
+    justify-self: center;
+}
+
+#loader {
+    width: 28px;
+    height: 28px;
+    border: 3px solid #e5e7eb;
+    border-top: 3px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-top: 12px;
+    justify-self: center;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form id="contact_form">
+      <div id="heading_and_reset">
+        <h1>Registration Form</h1>
+        <p id="reset_button">Reset</p>
+      </div>
+
+      <div id="name_section">
+        <div id="first_name_field" class="input_field">
+          <label for="first_name">First Name *</label>
+          <input type="text" id="first_name" name="first_name" class="text_input required_field" required>
+          <p class="required_field_text">This field is required</p>
+        </div>
+
+        <div id="last_name_field" class="input_field">
+          <label for="last_name">Last Name *</label>
+          <input type="text" id="last_name" name="last_name" class="text_input required_field" required>
+          <p class="required_field_text">This field is required</p>
+        </div>
+      </div>
+
+      <div id="email_field" class="input_field">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" class="text_input required_field" required>
+        <p class="required_field_text">This field is required</p>
+      </div>
+
+      <div id="gender_section" class="input_field">
+        <p>Query Type *</p>
+        <div class="radio_buttons">
+          <div class="radio_button">
+            <input type="radio" value="male" name="gender_type" required>
+            <p>Male</p>
+          </div>
+          <div class="radio_button">
+            <input type="radio" value="female" name="gender_type" required>
+            <p>Female</p>
+          </div>
+          <div class="radio_button">
+            <input type="radio" value="other" name="gender_type" required>
+            <p>Other</p>
+          </div>
+        </div>
+        <p class="required_field_text">This field is required</p>
+      </div>
+
+      <div id="age_section">
+        <label for="date_of_birth">Date of Birth *</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+        <p class="required_field_text">Age should be greater than 18</p>
+      </div>
+
+      <div id="concent_section">
+        <div id="concent_text">
+          <input type="checkbox" name="consent" id="consent" required>
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+        <p class="required_field_text">To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button id="submit_button" type="submit">Register</button>
+      <div id="loader"></div>
+      <p id="server_response">Server Response</p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
