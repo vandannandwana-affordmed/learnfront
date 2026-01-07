@@ -1,0 +1,229 @@
+@font-face {
+    font-family: defaultFont;
+    src: url("./assets/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: tempratureFont;
+    src: url("./assets/Montserrat-Regular.ttf");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.138);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: defaultFont;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.877);
+    color: #ffffff;
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+#search_form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#search_box {
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#search_form button {
+    padding: 8px;
+    border-radius: 7px;
+}
+
+#search_form button:hover {
+    background-color: black;
+    color: white;
+}
+
+#location_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+}
+
+aside {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.184);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+aside:hover {
+    background-color: black;
+}
+
+#weather_card {
+    width: 920px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+#summary_section {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px;
+}
+
+#top_left_section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: start;
+}
+
+#weather_info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: end;
+}
+
+#city_date {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#temp_degree {
+    display: flex;
+    align-items: start;
+    font-weight: 600;
+    font-size: 62px;
+    font-family: tempratureFont;
+    gap: 8px;
+}
+
+#celcious_text {
+    font-size: 24px;
+}
+
+#forcast_section {
+    margin: 0px 28px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+#forcast_heading {
+    font-size: 42px;
+}
+
+#days_list {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.day_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 32px;
+    margin: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+    border-radius: 12px;
+    font-family: tempratureFont;
+}
+
+.day_date {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.day {
+    font-weight: 700;
+}
+
+.day_temp {
+    display: flex;
+    gap: 8px;
+}
+
+.max_temp {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.min_temp {
+    font-size: 16px;
+}
+
+footer {
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.877);
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#loader {
+    width: 42px;
+    height: 42px;
+    border: 3px solid #e5e7eb;
+    border-top: 3px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-top: 12px;
+    justify-self: center;
+    display: none;
+    position: absolute;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
