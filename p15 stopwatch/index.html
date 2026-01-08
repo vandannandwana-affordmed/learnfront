@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple and elegant stopwatch built with HTML, CSS and JavaScript">
+  <title>Stopwatch</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <section class="stopwatch" aria-label="Stopwatch">
+
+      <h1 class="title">Stopwatch</h1>
+
+      <div 
+        class="time" 
+        id="display" 
+        role="timer" 
+        aria-live="polite"
+      >
+        00 : 00 : 00 : 000
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn btn-start">Start</button>
+        <button id="stopBtn" class="btn btn-stop">Stop</button>
+        <button id="resetBtn" class="btn btn-reset">Reset</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
